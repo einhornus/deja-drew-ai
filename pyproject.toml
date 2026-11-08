@@ -1,0 +1,45 @@
+[project]
+name = "dejadrew"
+dynamic = ["version"]
+description = "Consistent storyboards with AI. Bring your own OpenRouter key."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.11"
+keywords = ["storyboard", "image generation", "openrouter", "llm", "consistent characters"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Topic :: Multimedia :: Graphics",
+]
+dependencies = [
+    "pydantic>=2.0",
+    "pydantic-ai-slim[openrouter]>=1.0",
+    "httpx>=0.27",
+    "python-dotenv>=1.0",
+    "rapidfuzz>=3.9",
+    "numpy>=1.26",
+    "pillow>=10",
+    "opencv-python-headless>=4.8",
+    "scipy>=1.11",
+    "scikit-image>=0.22",
+]
+
+[project.urls]
+Homepage = "https://github.com/einhornus/deja-drew-ai"
+
+[project.scripts]
+dejadrew = "dejadrew.cli:main"
+
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.dynamic]
+version = { attr = "dejadrew.__version__" }
+
+[tool.setuptools.packages.find]
+include = ["dejadrew*"]
+
+[tool.setuptools.package-data]
+dejadrew = ["styles/*.json"]

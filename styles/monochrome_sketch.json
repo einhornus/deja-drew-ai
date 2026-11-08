@@ -1,0 +1,26 @@
+{
+  "width": 1280,
+  "height": 720,
+  "model": "google/gemini-3-pro-image",
+  "monochrome": true,
+  "attempts": 5,
+  "thresholds": {
+    "style": 80,
+    "characters": 80,
+    "scene": 80,
+    "technical": 70
+  },
+  "normalize": {
+    "enabled": true,
+    "bg": 1.0,
+    "ink_threshold": 0.06,
+    "ref_width": 1280,
+    "width_strength": 0.7,
+    "line_strength": 0.8,
+    "wash_strength": 0.8,
+    "width_ratio_limits": [0.5, 2.0],
+    "slope_limits": [0.4, 2.5],
+    "snap": [0.02, 0.05]
+  },
+  "prompt": "Art style: a delicate hand-drawn graphite pencil sketch in a traditional naturalist sketchbook style on a completely white background. Monochrome gray graphite only, no color. Pure white background, completely clean and empty, with no paper texture, no cast shadows on the paper, no vignette, and no border.\n\nLinework: thin, light, confident pencil outlines of slightly varying weight, soft and slightly sketchy, with occasional faint loose construction strokes left visible. Lines taper at their ends. Outlines are darker on the shadow side and lighter or broken on the lit side.\n\nShading: soft, light graphite shading built from fine directional hatching strokes that follow the form and surface texture of each object. No cross-hatching grids. Mostly light to mid-gray tones, with bare white paper left as highlights. Darker graphite is used only as small accents. No solid black fills. Single soft light source from the upper left, so shading falls on the lower right of all forms.\n\nDetail hierarchy: the main subject is the most detailed and most shaded element and the clear focal point. Secondary elements have moderate texture and lighter shading. Peripheral elements such as foliage, plants, and background objects are drawn as simple, clean outlines with minimal or no shading, and they become lighter and looser toward the edges of the image, partly fading into faint lines.\n\nRendering character: soft, rounded, gentle forms that are calm and anatomically believable, slightly charming but not cartoonish. Any eyes are small, dark, and glossy with a tiny white highlight. The darkest values are reserved for the eyes and a few small key details and edges.\n\nComposition: clean, airy, and minimal, with generous white negative space around the drawing. No background scenery beyond what is described. The overall mood is elegant, quiet, and observational, like a page from an artist's nature sketchbook."
+}
